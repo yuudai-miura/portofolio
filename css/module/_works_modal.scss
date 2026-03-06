@@ -1,0 +1,180 @@
+// modal
+.works {
+    &_modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        z-index: 999;
+
+        &.active {
+            display: flex;
+        }
+
+
+        &_inner {
+            max-height: 88vh;
+            width: min(1100px, 92vw);
+            padding: 28px;
+            border-radius: 20px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, .25);
+            background: $color_white;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 28px;
+            align-items: start;
+            overflow: auto;
+
+            @include viewport-768 {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 20px;
+            }
+        }
+
+        &_back_btn {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: #f3f4f6;
+            border: 1px solid $border;
+            cursor: pointer;
+            transition: 0.2s ease;
+
+            &:hover {
+                background: #eaeef2;
+            }
+
+            span {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 18px;
+                height: 2px;
+                background: $primary;
+                transform-origin: center;
+            }
+
+            span:first-child {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            span:last-child {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+
+        &_title {
+            grid-column: 1 / -1;
+            margin: 0 0 18px;
+
+            @include viewport-375 {
+                font-size: 16px;
+            }
+        }
+
+        &_img {
+            width: 100%;
+            height: min(70vh, 520px);
+            border-radius: 16px;
+            background: $background;
+            border: 1px solid $border;
+            overflow: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+
+
+        &_body,
+        &_img {
+            min-width: 0;
+        }
+
+        &_body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+
+            @include viewport-768 {
+                grid-column: 1 / -1;
+                grid-row: auto;
+            }
+        }
+
+        &_list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 0;
+            margin: 0 0 8px;
+            list-style: none;
+        }
+
+        &_item {
+            max-width: 100%;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: $background;
+            border: 1px solid $border;
+            white-space: normal;
+            overflow-wrap: anywhere;
+        }
+
+        &_text {
+            h3 {
+                margin: 0 0 8px;
+                border-bottom: 1px solid $border;
+                padding-bottom: 8px;
+                font-size: $font_size_base;
+            }
+
+            p {
+                margin-bottom: 24px;
+                line-height: 1.8;
+                font-size: 14px;
+                color: #334155;
+            }
+        }
+
+        &_btn {
+            width: 200px;
+            height: clamp(48px, 1.6vw, 56px);
+            margin-top: 8px;
+            border-radius: 999px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $primary;
+            color: $color_white;
+            text-decoration: none;
+            transition: 0.25s ease;
+
+            &:hover {
+                filter: brightness(0.8);
+            }
+
+            @include viewport-768 {
+                width: 100%;
+            }
+        }
+    }
+}
+
+body.is-modal-open {
+    overflow: hidden;
+}

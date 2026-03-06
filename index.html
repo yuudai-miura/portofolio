@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>YUDAI MIURA PORTFOLIO</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <a href="#top" class="header_logo">
+                <h1>YUDAI MIURA<span>PORTFOLIO</span></h1>
+            </a>
+            <nav class="header_nav">
+                <ul class="header_list">
+                    <li class="header_item"><a href="#top" class="header_link">TOP</a></li>
+                    <li class="header_item"><a href="#works" class="header_link">WORKS</a></li>
+                    <li class="header_item"><a href="#skill" class="header_link">SKILL</a></li>
+                    <li class="header_item"><a href="#about" class="header_link">ABOUT</a></li>
+                    <li class="header_item"><a href="#contact" class="header_link">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <section class="mv" id="top">
+        <div class="mv_inner">
+            <div class="mv_title">
+                <h2>
+                    <span>YUDAI MIURA</span> <span>PORTFOLIO</span>
+                </h2>
+            </div>
+            <div class="mv_button">
+                <a href="#works" class="mv_link button">WORKS</a>
+            </div>
+        </div>
+    </section>
+    <section class="works" id="works">
+        <div class="works_inner inner">
+            <h2 class="works_title section_title">Works</h2>
+            <div class="works_list">
+                <button class="works_item" data-title="ヨコハマ・クエスト" data-period="制作期間：10日" data-role="担当：デザイン / コーディング"
+                    data-skill="使用技術：HTML / CSS / JavaScript / レスポンシブ"
+                    data-overview="横浜・桜木町周辺を舞台にした周遊型謎解きイベントのLPサイトを想定して制作しました。イベントの世界観と楽しさが直感的に伝わる構成を意識しています。"
+                    data-purpose="イベント内容や参加方法を分かりやすく伝え、親子連れや観光客が安心して参加できるようにすること。必要な情報に迷わずたどり着ける導線設計を目指しました。"
+                    data-point="春をテーマにした桜の装飾や配色で季節感と楽しさを表現しました。チェックポイントや遊び方を順序立てて配置し、初めての参加者でも理解しやすい構成にしています。スマートフォンでも閲覧しやすいレスポンシブ対応を行いました。"
+                    data-img="img/works/yokohama_quest_full.png" data-desc="ECサイトを想定して制作しました。"
+                    data-url="https://intp.site/2980/%e3%83%a8%e3%82%b3%e3%83%8f%e3%83%9e%e3%83%bb%e3%82%af%e3%82%a8%e3%82%b9%e3%83%88/">
+                    <img src="img/works/yokohama_quest.png" alt="ヨコハマ・クエスト" class="works_img">
+                    <div class="works_text">
+                        <h3>ヨコハマ・クエスト</h3>
+                        <p>Design/Coding</p>
+                    </div>
+                </button>
+                <button class="works_item" data-title="Nextwave web studio" data-period="制作期間：10日"
+                    data-role="担当：デザイン / コーディング" data-skill="使用技術：HTML / CSS / JavaScript / WordPress / PHP / レスポンシブ"
+                    data-overview="中小企業向けWeb制作会社のコーポレートサイトを想定して制作しました。サービス内容や会社情報、採用情報などを整理し、企業の信頼性が伝わる構成にしています。"
+                    data-purpose="企業の強みや提供サービスを分かりやすく伝え、問い合わせや採用応募につながる導線を作ること。実際の企業サイトとして運用されることを想定しました。"
+                    data-point="WordPressでの運用を前提に、ニュースやページを管理画面から更新できる構造でテーマ化しました。落ち着いた配色と余白設計で信頼感を演出し、PC・スマートフォン双方で閲覧しやすいレスポンシブ対応を行っています。"
+                    data-img="img/works/nextwave_web_studio_full.png"
+                    data-url="https://intp.site/2980/nextwave_web_studio/">
+                    <img src="img/works/nextwave_web_studio.png" alt="Nextwave web studio" class="works_img">
+                    <div class="works_text">
+                        <h3>Nextwave web studio</h3>
+                        <p>Design/Coding</p>
+                    </div>
+                </button>
+                <button class="works_item" data-title="SALON_LUMINA" data-period="制作期間：3日" data-role="担当：コーディング"
+                    data-skill="使用技術：HTML / CSS / Sass / JavaScript / ES Modules / レスポンシブ"
+                    data-overview="既存デザインを基に、実務を想定した構造でコーディングを行いました。"
+                    data-purpose="デザインを忠実に再現するコーディング力と、保守性を意識した設計力を示すことを目的としました。"
+                    data-point="SassによるBEM設計でスタイルを構築し、JavaScriptはES Modulesで機能ごとに分割管理しています。ハンバーガーメニュー、タブ切替、モーダルの動的表示、IntersectionObserverによるスクロールアニメーションを実装しました。クリックしたスタッフごとに内容が切り替わるモーダル設計にするなど、実務を想定したUI実装を行っています。スマートフォンを含むレスポンシブ対応済みです。"
+                    data-img="img/works/salon_lumina_full.png" data-url="https://intp.site/2980/salon_lumina/">
+                    <img src="img/works/salon_lumina.png" alt="美容院サイト SALON LUMINA" class="works_img">
+                    <div class="works_text">
+                        <h3>SALON_LUMINA</h3>
+                        <p>coding</p>
+                    </div>
+                </button>
+
+                <button class="works_item" data-title="YUDAI MIURA PORTFOLIO" data-period="制作期間：7日"
+                    data-role="担当：デザイン / コーディング" data-skill="使用技術：HTML / CSS / Sass / JavaScript / Photoshop / レスポンシブ"
+                    data-overview="自身の制作物やスキルを分かりやすく伝えるためのポートフォリオサイトです。作品・技術・プロフィールを整理し、短時間で内容を把握できる構成にしました。"
+                    data-purpose="採用担当者が制作物の内容や担当範囲、使用技術をスムーズに確認できることを目的としました。視認性と回遊性を重視した情報設計を行っています。"
+                    data-point="Worksはモーダルで詳細を表示する構成にし、一覧画面はシンプルに保つことで見やすさを向上させました。スクロール時のフェード表示やハンバーガーメニューなどのUIをJavaScriptで実装し、スマートフォンでも快適に閲覧できるレスポンシブ対応を行っています。"
+                    data-img="img/works/portfolio_full.png" data-url="https://intp.site/2980/portfolio/">
+                    <img src="img/works/portfolio.png" alt="ポートフォリオサイト" class="works_img">
+                    <div class="works_text">
+                        <h3>YUDAI MIURA PORTFOLIO</h3>
+                        <p>Design/coding</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="works_modal">
+            <div class="works_modal_inner">
+                <h2 id="modalTitle" class="works_modal_title"></h2>
+                <button class="works_modal_back_btn" type="button" aria-label="閉じる">
+                    <span></span><span></span>
+                </button>
+                <div class="works_modal_img">
+                    <img id="modalImg" alt="">
+                </div>
+                <div class="works_modal_body">
+                    <ul class="works_modal_list">
+                        <li class="works_modal_item" id="modalPeriod"></li>
+                        <li class="works_modal_item" id="modalRole"></li>
+                        <li class="works_modal_item" id="modalSkill"></li>
+                    </ul>
+                    <div class="works_modal_text">
+                        <h3>概要</h3>
+                        <p id="modalOverview"></p>
+                        <h3>制作目的</h3>
+                        <p id="modalPurpose"></p>
+                        <h3>工夫した点</h3>
+                        <p id="modalPoint"></p>
+                    </div>
+                    <a id="modalUrl" class="works_modal_btn" target="_blank" rel="noopener">サイトを見る</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skill" id="skill">
+        <div class="skill_inner inner">
+            <h2 class="skill_title section_title">Skill</h2>
+            <div class="skill_list">
+                <div class="skill_item">
+                    <div class="skill_item_title">
+                        <div class="skill_icon">
+                            <img src="img/icon/html.png" alt="">
+                            <img src="img/icon/css.png" alt="">
+                        </div>
+                        <h3>HTML/CSS</h3>
+                    </div>
+                    <p class="skill_text">
+                        HTMLとCSSを用いたWebサイトの構築ができます。FlexboxやGridを用いたレイアウト構築、レスポンシブ対応を意識したコーディングを心掛けています。保守性を考えたクラス設計を意識して制作しています。
+                    </p>
+                </div>
+                <div class="skill_item">
+                    <div class="skill_item_title">
+                        <div class="skill_icon"><img src="img/icon/js.png" alt=""></div>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <p class="skill_text">
+                        ハンバーガーメニュー、モーダル、スライド表示など、UIの操作性を高めるインタラクションを実装できます。
+                        DOM操作やイベント処理を用いて、ユーザーが直感的に操作できる動きを重視しています。
+                    </p>
+                </div>
+                <div class="skill_item">
+                    <div class="skill_item_title">
+                        <div class="skill_icon"><img src="img/icon/illustrator.png" alt=""></div>
+                        <h3>Illustrator</h3>
+                    </div>
+                    <p class="skill_text">
+                        Illustratorの基本操作が可能です。簡単なアイコンやサイトパーツの作成、レイアウト素材の作成に使用しています。
+                    </p>
+                </div>
+                <div class="skill_item">
+                    <div class="skill_item_title">
+                        <div class="skill_icon"><img src="img/icon/photoshop.png" alt=""></div>
+                        <h3>Photoshop</h3>
+                    </div>
+                    <p class="skill_text">
+                        Photoshopの基本操作が可能です。画像の補正やトリミング、Webサイト用の画像加工に使用しています。
+                    </p>
+                </div>
+                <div class="skill_item">
+                    <div class="skill_item_title">
+                        <div class="skill_icon"><img src="img/icon/wordpress.png" alt=""></div>
+                        <h3>WordPress</h3>
+                    </div>
+                    <p class="skill_text">
+                        オリジナルテーマの作成が可能です。header.php / footer.php / page.php /
+                        single.phpなどのテンプレート分割、カスタム投稿・管理画面から更新できる構成の実装に対応しています。運用しやすく、長く使えるサイト制作を意識しています。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about_inner inner">
+            <h2 class="about_title  section_title">About</h2>
+            <div class="about_list">
+                <img src="img/about/about.png" alt="" class="about_img">
+                <div class="about_item">
+                    <div class="about_text">
+                        <h3 class="name">三浦　侑大 <span>YUDAI MIURA</span></h3>
+                        <p>
+                            造船所での検査補助業務を経て、Web制作の分野に挑戦しました。
+                            現在は職業訓練校にてHTML / CSS / JavaScript /
+                            WordPressを中心に学習し、デザインからコーディングまで一貫した制作を行っています。見た目だけでなく、使いやすさや更新性を重視したサイト制作を心がけています。将来的には、クライアントやユーザーにとって価値のあるWebサイトを提供できる制作者を目指しています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
+        <div class="footer_inner">
+            <a href="mailto:yuudai990428@gmail.com">
+                <img src="img/icon/mail.png" alt="" class="footer_img">
+            </a>
+            <small class="footer_text">🄫2026 YUDAI MIURA - PORTFOLIO</small>
+        </div>
+    </footer>
+</body>
+
+</html>

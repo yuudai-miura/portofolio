@@ -1,0 +1,97 @@
+@charset 'utf-8';
+// color
+$color_white: #ffffff;
+$color_black: #000000;
+$primary: #495F71;
+$text: #111;
+$muted: #666;
+$background: #FAF9F9;
+$border: #E9E9E9;
+
+// font_size
+$font_size_xxl: clamp(36px, 6vw, 64px);
+$font_size_xl: clamp(28px, 5vw, 48px);
+$font_size_lg: clamp(22px, 4vw, 32px);
+$font_size_md: clamp(18px, 3vw, 24px);
+$font_size_base: clamp(14px, 1.6vw, 16px);
+$font_size_sm: 12px;
+
+// $font_size_xxl: clamp(36px, 5vw, 56px); // MVタイトル・最大見出し
+// $font_size_xl: clamp(28px, 4vw, 42px); // セクション見出し
+// $font_size_lg: clamp(22px, 3vw, 30px); // 小見出し・カードタイトル
+// $font_size_md: clamp(18px, 2vw, 22px); // 強調テキスト・リード文
+// $font_size_base: clamp(15px, 1.2vw, 17px); // 本文（最重要）
+// $font_size_sm: 13px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: "Noto Sans JP", system-ui, sans-serif;
+    font-size: $font_size_xl;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    color: $text;
+}
+
+h2,
+.button {
+    font-family: "Noto Sans JP", system-ui, sans-serif;
+    font-size: $font_size_lg;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    color: $text;
+}
+
+h3 {
+    font-family: "Noto Sans JP", system-ui, sans-serif;
+    font-size: $font_size_md;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    color: $text;
+}
+
+p,
+li,
+a,
+span {
+    font-family: "Noto Sans JP", system-ui, sans-serif;
+    font-size: $font_size_base;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    color: $text;
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+img {
+    max-width: 100%;
+}
+
+// section
+section {
+    scroll-margin-top: clamp(64px, 7vw, 92px);
+}
+
+.section_title {
+    padding: 0;
+    margin-bottom: clamp(32px, 5vw, 64px);
+}
+
+.inner {
+    max-width: 1100px;
+    width: 90%;
+    margin: clamp(48px, 8vw, 80px) auto;
+}

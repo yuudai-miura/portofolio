@@ -1,0 +1,11 @@
+@mixin viewport-375() {
+    @media (width <=375px) {
+        @content;
+    }
+}
+
+@mixin viewport-768() {
+    @media (width <=768px) {
+        @content;
+    }
+}
