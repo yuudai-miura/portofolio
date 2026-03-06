@@ -16,13 +16,6 @@ $font_size_md: clamp(18px, 3vw, 24px);
 $font_size_base: clamp(14px, 1.6vw, 16px);
 $font_size_sm: 12px;
 
-// $font_size_xxl: clamp(36px, 5vw, 56px); // MVタイトル・最大見出し
-// $font_size_xl: clamp(28px, 4vw, 42px); // セクション見出し
-// $font_size_lg: clamp(22px, 3vw, 30px); // 小見出し・カードタイトル
-// $font_size_md: clamp(18px, 2vw, 22px); // 強調テキスト・リード文
-// $font_size_base: clamp(15px, 1.2vw, 17px); // 本文（最重要）
-// $font_size_sm: 13px;
-
 * {
     box-sizing: border-box;
     margin: 0;
