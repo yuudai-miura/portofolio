@@ -1,0 +1,28 @@
+.footer {
+    padding: clamp(24px, 5vw, 64px) 0;
+
+    &_inner {
+        width: min(1100px, 90%);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &_img {
+        width: clamp(36px, 6vw, 48px);
+        height: auto;
+        transition: 0.3s;
+    }
+
+    &_img:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    &_text {
+        font-size: clamp(12px, 1.2vw, 14px);
+        color: $muted;
+    }
+}

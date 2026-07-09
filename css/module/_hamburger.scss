@@ -1,0 +1,48 @@
+.hamburger_btn {
+    display: none;
+
+    @include viewport-768 {
+        display: flex;
+        width: 36px;
+        height: 40px;
+        position: relative;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.hamburger_btn span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: $primary;
+    transition: 0.3s;
+}
+
+.hamburger_btn span:nth-child(1) {
+    top: 8px;
+}
+
+.hamburger_btn span:nth-child(2) {
+    top: 20px;
+}
+
+.hamburger_btn span:nth-child(3) {
+    top: 32px;
+}
+
+.header.open .hamburger_btn span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 19px;
+}
+
+.header.open .hamburger_btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .hamburger_btn span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 19px;
+}

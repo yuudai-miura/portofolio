@@ -1,0 +1,106 @@
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: $background;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: $border;
+    }
+
+    &::before {
+        width: 800px;
+        height: 800px;
+        top: -150px;
+        left: -150px;
+
+        @include viewport-768 {
+            width: 600px;
+            height: 600px;
+        }
+
+        @include viewport-375 {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    &::after {
+        width: 500px;
+        height: 500px;
+        bottom: -150px;
+        right: -150px;
+
+        @include viewport-768 {
+            width: 400px;
+            height: 400px;
+        }
+
+        @include viewport-375 {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    &_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 8;
+
+    }
+
+    &_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+
+        @include viewport-768 {
+            grid-template-columns: 1fr;
+        }
+
+
+    }
+
+    &_item {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 40px;
+        border-radius: 16px;
+        width: 100%;
+        min-height: 240px;
+        box-shadow: 8px 8px $color_black;
+        background-color: $color_white;
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+
+        &.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @include viewport-375 {
+            width: 280px;
+            height: auto;
+
+            .about_text p {
+                max-width: 100%;
+            }
+        }
+
+        &_title {
+            display: flex;
+            margin-bottom: 16px;
+            gap: 16px;
+
+        }
+
+    }
+}
